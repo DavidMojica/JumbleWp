@@ -1,0 +1,58 @@
+body {
+    background-color: #1e1e1e;
+    scroll-behavior: smooth;
+    color: #fff;
+    width: 84%;
+    display: grid;
+    place-items: center;
+    margin-left: 8%;
+}
+ul {
+    list-style: none;
+    padding-left: 0
+}
+ul a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo_small {
+    height: 4.5em;
+}
+
+#navbarNav a {
+    font-size: 1.4em;
+}
+
+.grid-quad {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 30px;
+}
+
+.mini {
+    width: 80px;
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10%;
+    place-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        "footer_bot footer_bot footer_bot";
+    text-align: center;
+}
+
+.footer_bot {
+    grid-area: footer_bot;
+}
+
+.fa-heart {
+    color: red;
+}
+.fa-certificate{
+    color: green;
+}
