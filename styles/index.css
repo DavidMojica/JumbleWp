@@ -22,6 +22,9 @@
 .grid-mid1 { grid-area: grid-mid1; }
 .grid-mid2 { grid-area: grid-mid2; text-align: center;}
 
+
+
+
 .button_bot{
     width: 48%;
 }
@@ -41,7 +44,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1.2fr 1.2fr 0.6fr;
     gap: 0px 0px;
-    height: 100vh;
+    height: 70vh;
     place-items: center;
     grid-auto-flow: row;
     grid-template-areas:
@@ -55,4 +58,32 @@ h1{
   
   .main_grid_bot { grid-area: main_grid_bot; }
   
-  
+  @media (max-width: 752px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .8fr 1.3fr 1.3fr;
+        grid-template-areas: none;
+        height: 90vh;
+        
+    }
+    .logo_big{
+        height: 150px;
+        min-height: auto;
+    }
+    .grid-top{
+        grid-area: auto;
+    }
+    .grid-mid1{
+        grid-area: auto;
+    }
+    .grid-mid2{
+        display: grid;
+        grid-area: auto;
+    }
+    .grid-bot{
+        grid-area: auto;
+    }
+    .main_tittle{
+        font-size: 2.5em;
+    }
+}
