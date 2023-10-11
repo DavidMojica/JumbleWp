@@ -15,6 +15,7 @@
     "grid-bot grid-bot";
     place-items: center;
     height: 100vh;
+    margin-bottom: 2%;
 }
 
 .grid-top { grid-area: grid-top; place-items: initial;}
@@ -44,7 +45,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1.2fr 1.2fr 0.6fr;
     gap: 0px 0px;
-    height: 70vh;
+    height: 100vh;
     place-items: center;
     grid-auto-flow: row;
     grid-template-areas:
@@ -54,20 +55,14 @@ h1{
       "main_grid_bot main_grid_bot";
   }
   
-  .main_grid_top { grid-area: main_grid_top; }
-  
   .main_grid_bot { grid-area: main_grid_bot; }
   
-  @media (max-width: 752px) {
-    body{
-        margin: 0;
-    }
-
+@media (max-width: 752px) {
     .grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: .5fr .8fr 1.3fr 1.3fr;
         grid-template-areas: none;
-        height: 85vh;
+        height: 95vh;
         margin-bottom: 15vh;
     }
     .logo_big{
@@ -97,15 +92,16 @@ h1{
     .main{
         display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.6fr 1.3fr 1.3fr 1.3fr 0.5fr; 
+    grid-template-rows: 0.3fr 1.3fr .7fr .7fr .3fr; 
     gap: 0px 0px; 
     grid-template-areas: 
         "middle-grid-top-left middle-grid-top-left"
         "grid-quad grid-quad"
-        "div_card_rainbow_2 div_span_card_rainbow_2"
+        "div_span_card_rainbow_2 div_card_rainbow_2"
         "div_span_card_UNO div_card_UNO"
         "main_grid_bot main_grid_bot"; 
-        height: 85vh;
+        height: auto;
+        text-align: center;
     }
 
     .middle-grid-top-left { grid-area: middle-grid-top-left; }
@@ -116,16 +112,19 @@ h1{
     .div_card_UNO { grid-area: div_card_UNO; }
     .main_grid_bot { grid-area: main_grid_bot; }
 
-    .myCard{
-        width: 100px;
-        height: 135px;
-    }
     .grid-quad{
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 3%;
     }
-    .card_rainbow_2{
-        width: 100px;
-        height: 135px;
+    .card_rainbow_2, .card_UNO, .myCard{
+        width: 45vw;
+        height: 32vh;
+        min-height: 250px;
+        min-width: 157px;
+        max-width: 200px;
+        max-height: 250px;
     }
+
+    /* footer */
 
 }

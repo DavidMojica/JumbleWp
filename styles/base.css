@@ -56,3 +56,26 @@ ul a{
 .fa-certificate{
     color: green;
 }
+
+@media (max-width: 752px) {
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    /* footer */
+    .footer_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: none;
+        gap: 5%;
+    }
+    .footer_bot{
+        grid-area: auto;
+    }
+    .flex-col{
+        width: 100%;
+    }
+
+
+}
