@@ -1,0 +1,34 @@
+.main{
+    place-items: center;
+}
+.clusters_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 25px;
+}
+.clusters_grid li{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border-radius: 1em;
+}
+.legend_grid{
+    font-size: 22px;
+}
+@media (max-width: 752px){
+    .clusters_grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .top_view{
+        height: 100vh;
+        margin-bottom: 50%;
+        text-align: center;
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+
+}

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Josefin Sans";
+}
 body {
     background-color: #1e1e1e;
     scroll-behavior: smooth;
@@ -15,12 +20,29 @@ ul a{
     text-decoration: none;
     color: #fff;
 }
+.top_view{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: none
+    "navbar"
+    "main"
+    "btn_more";
+    place-items: center;
+}
+
+
 .logo_small {
     height: 4.5em;
 }
 
 #navbarNav a {
     font-size: 1.4em;
+}
+.active_page{
+    color: #F7AC59;
 }
 
 .grid-quad {
@@ -49,6 +71,9 @@ ul a{
 .footer_bot {
     grid-area: footer_bot;
 }
+.flex-col{
+    width: 100%;
+}
 
 .fa-heart {
     color: red;
@@ -56,7 +81,6 @@ ul a{
 .fa-certificate{
     color: green;
 }
-
 @media (max-width: 752px) {
     body{
         margin: 0;
@@ -79,3 +103,14 @@ ul a{
 }
 
 
+/* MISC */
+
+.orange_text{
+    color: #D99027;
+}
+.big_sub{
+    font-size: 22px;
+}
+.small_sub{
+    font-size: 18px;
+}
