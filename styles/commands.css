@@ -2,19 +2,6 @@
     --orange_jumble:#b1721b;
 }
 
-.top_view{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    gap: 0px 0px;
-    grid-template-areas: none
-    "navbar"
-    "div_commandslist"
-    "btn_more";
-    place-items: center;
-}
-
 .litem_grid{
     display: grid; 
     grid-template-columns: 0.2fr 1.8fr 0.2fr; 
@@ -75,6 +62,4 @@
         grid-template-columns: 0.3fr 1.8fr 0.6fr;
         padding: .7em; 
     }
-
-
 }

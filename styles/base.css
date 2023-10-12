@@ -20,6 +20,20 @@ ul a{
     text-decoration: none;
     color: #fff;
 }
+.top_view{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: none
+    "navbar"
+    "main"
+    "btn_more";
+    place-items: center;
+}
+
+
 .logo_small {
     height: 4.5em;
 }

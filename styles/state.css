@@ -1,16 +1,3 @@
-.top_view{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    gap: 0px 0px;
-    grid-template-areas: none
-    "navbar"
-    "main"
-    "btn_more";
-    place-items: center;
-}
-
 .main{
     place-items: center;
 }
@@ -29,4 +16,19 @@
 }
 .legend_grid{
     font-size: 22px;
+}
+@media (max-width: 752px){
+    .clusters_grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .top_view{
+        height: 100vh;
+        margin-bottom: 50%;
+        text-align: center;
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+
 }
