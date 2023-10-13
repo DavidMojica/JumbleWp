@@ -48,8 +48,7 @@
 
 @media (max-width: 752px) {
     .top_view{
-        height: 95vh;
-        margin-bottom: 15vh;
+        height: auto;
         text-align: center;
         width: 90%;
     }

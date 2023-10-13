@@ -22,8 +22,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .top_view{
-        height: 100vh;
-        margin-bottom: 50%;
+        height: auto;
         text-align: center;
         width: 90%;
     }
