@@ -24,7 +24,6 @@ ul a{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
     gap: 0px 0px;
     grid-template-areas: none
     "navbar"
@@ -85,7 +84,9 @@ ul a{
     body{
         margin: 0;
         width: 100%;
+       
     }
+    
     /* footer */
     .footer_grid{
         display: grid;
